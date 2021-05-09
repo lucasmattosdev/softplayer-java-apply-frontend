@@ -1,0 +1,18 @@
+pessoa-page{
+  .table{
+    td{
+      vertical-align: middle;
+    }
+    tr td:nth-child(n+3) {
+      min-width: 80px;
+      max-width: 250px;
+      word-wrap: break-word;
+   }
+  }
+  .display-4{
+    font-size: 35px;
+  }
+  .adicionar-pessoa{
+    margin-top: -55px;
+  }
+}
