@@ -113,7 +113,7 @@ export default class PessoaPageCad extends Component {
     this.setState({pessoa: pessoa});
   }
 
-  getValueInput(valor){
+  converterValorInput(valor){
     if (valor===undefined || valor === null) return ""
     return valor;
   }
@@ -141,7 +141,7 @@ export default class PessoaPageCad extends Component {
                     minLength="2"
                     maxLength="50"
                     required
-                    value={this.getValueInput(this.state.pessoa.nome)}
+                    value={this.converterValorInput(this.state.pessoa.nome)}
                     onChange={e => this.atualizarCampoPessoa("nome", e.target.value)}
                   />
                 </InputGroup>
@@ -169,7 +169,7 @@ export default class PessoaPageCad extends Component {
                     name="inputGroup-email"
                     type="email"
                     maxLength="80"
-                    value={this.getValueInput(this.state.pessoa.email)}
+                    value={this.converterValorInput(this.state.pessoa.email)}
                     onChange={e => this.atualizarCampoPessoa("email", e.target.value)}
                   />
                 </InputGroup>
@@ -208,7 +208,7 @@ export default class PessoaPageCad extends Component {
                     name="inputGroup-naturalidade"
                     minLength="3"
                     maxLength="30"
-                    value={this.getValueInput(this.state.pessoa.naturalidade)}
+                    value={this.converterValorInput(this.state.pessoa.naturalidade)}
                     onChange={e => this.atualizarCampoPessoa("naturalidade", e.target.value)}
                   />
                 </InputGroup>
@@ -224,7 +224,7 @@ export default class PessoaPageCad extends Component {
                     name="inputGroup-nacionalidade"
                     minLength="3"
                     maxLength="30"
-                    value={this.getValueInput(this.state.pessoa.nacionalidade)}
+                    value={this.converterValorInput(this.state.pessoa.nacionalidade)}
                     onChange={e => this.atualizarCampoPessoa("nacionalidade", e.target.value)}
                   />
                 </InputGroup>

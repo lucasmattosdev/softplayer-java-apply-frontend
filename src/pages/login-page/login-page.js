@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import CryptoJS from 'crypto-js';
 import './login-page.scss'
 import UsuarioService from '../../service/usuario-service'
+import AuthUtil from '../../util/auth-util'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Spinner from 'react-bootstrap/Spinner'
@@ -29,9 +30,7 @@ export default class LoginPage extends Component {
         let senhaCrip = CryptoJS.SHA256(this.state.senha).toString();
         this.usuarioService.validarNomeSenha(this.state.nome, senhaCrip).then(_=>{
           this.setState({ isLoading: false });
-          window.localStorage.nome = this.state.nome;
-          window.localStorage.credential = btoa(this.state.nome+":"+senhaCrip);
-          window.location.href = "/";
+          AuthUtil.saveLogin(this.state.nome, senhaCrip);
         }).catch((error)=>{
           this.setState({ isLoading: false });
           if (error.response){
