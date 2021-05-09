@@ -23,7 +23,7 @@ export default class AxiosUtil{
 
   static updateAuthorization(){
     if (window.localStorage.credential !== undefined){
-      axios.defaults.headers.common['Authorization'] = 'BASIC '+window.localStorage.credential;
+      axios.defaults.headers.common['Authorization'] = 'Basic '+window.localStorage.credential;
     }
   }
 }
