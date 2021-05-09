@@ -1,6 +1,6 @@
 # Softplayer Java Apply - Frontend
 
-Aplicação para o teste prático de cargo Desenvolvedor Fullstack na Softplan.
+Aplicação para o teste prático de cargo Desenvolvedor Fullstack na Softplan, desenvolvida em React.
 
 ## Desafio
 
