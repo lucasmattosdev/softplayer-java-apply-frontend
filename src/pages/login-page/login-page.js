@@ -12,8 +12,8 @@ export default class LoginPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      nome: "soft",
-      senha: "123",
+      nome: "",
+      senha: "",
       isLoading: false,
       errorMessage: undefined
     }
