@@ -7,20 +7,21 @@ Aplicação para o teste prático de cargo Desenvolvedor Fullstack na Softplan, 
 CRUD de Pessoa com autenticação Basic.
 
 ```bash
-pip install foobar
+https://github.com/softplan/softplayer-java-apply
 ```
 
 ## Aplicação
 
-Para rodar, devemos compilar o projeto com o comando:
+Para rodar, devemos instalar os pacotes com o comando:
 ```bash
-npm run build
+npm install
 ```
-Movemos os arquivos das pastas:
+Após instalados, basta subir a aplicação com o comando:
 ```bash
-{frontendPath}/build -> {backendPath}/softplayer-java-apply-backend-resource\src\main\webapp
+npm start
 ```
-Após isso, basta levantar o backend que o mesmo estará com a parte do frontend
+
+Obs: Veja o módulo Backend deste projeto para complementar o Frontend e levantar o servidor de APIs.
 
 ## License
 © 2021 [Lucas Mattos](https://www.lucasmattos.com.br/). Todos os direitos reservados.
