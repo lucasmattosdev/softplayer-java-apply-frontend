@@ -24,4 +24,4 @@ npm start
 Obs: Veja o módulo Backend deste projeto para complementar o Frontend e levantar o servidor de APIs.
 
 ## License
-© 2021 [Lucas Mattos](https://www.lucasmattos.com.br/). Todos os direitos reservados.
+© 2021 [Lucas Mattos](https://lucasmattos.dev). Todos os direitos reservados.
